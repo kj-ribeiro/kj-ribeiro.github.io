@@ -63,7 +63,9 @@
     z-index: 2;
     max-width: 76rem;
     margin: 0 auto;
-    background: rgba(3, 5, 4, 0.28);
+    background: rgba(3, 5, 4, 0.68);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
     border: 1px solid var(--line);
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
   }
@@ -79,7 +81,7 @@
     gap: 0.75rem 2rem;
     padding: 0.9rem 2rem;
     border-bottom: 1px solid var(--line);
-    background: rgba(8, 10, 9, 0.72);
+    background: rgba(8, 10, 9, 0.78);
   }
   .brand { display: flex; align-items: center; gap: 0.75rem; color: var(--txt); text-decoration: none; font-weight: 700; font-size: 1.05rem; letter-spacing: 0.18em; }
   .brand svg { width: 2.4rem; height: 2.4rem; flex: none; }
@@ -116,7 +118,7 @@
     justify-content: center;
     padding: 2rem;
     border-left: 1px solid var(--line);
-    background-color: rgba(5, 8, 6, 0.3);
+    background-color: rgba(0, 0, 0, 0.35);
 
   }
   .ring { position: relative; width: 100%; max-width: 24rem; aspect-ratio: 1 / 1; border-radius: 50%; }
@@ -174,12 +176,12 @@
   ul.facts span:first-child { color: var(--dim); }
   ul.facts .val { text-align: right; }
 
-  footer { padding: 1rem 2rem; border-top: 1px solid var(--line); background: rgba(8, 10, 9, 0.72); color: var(--dim); font-size: 0.8rem; letter-spacing: 0.12em; }
+  footer { padding: 1rem 2rem; border-top: 1px solid var(--line); background: rgba(8, 10, 9, 0.78); color: var(--dim); font-size: 0.8rem; letter-spacing: 0.12em; }
 
   /* ---------- secções divididas na vertical ---------- */
   .split { display: grid; grid-template-columns: 1fr 1fr; min-height: calc(100vh - 8.5rem); position: relative; }
   .split > * { padding: 3rem 2.5rem; min-width: 0; align-self: stretch; display: flex; flex-direction: column; justify-content: center; }
-  .split > * + * { border-left: 1px solid var(--line); background: rgba(5, 8, 6, 0.3); }
+  .split > * + * { border-left: 1px solid var(--line); background: rgba(0, 0, 0, 0.35); }
   .split.join::after {
     content: "+";
     position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
@@ -273,7 +275,7 @@
   /* legibilidade sobre o código a cair */
   p, h1, h2, h3, li, label, .label { text-shadow: 0 0 3px #000, 0 0 10px #000, 0 0 18px #000; }
   .btn, .filters button { text-shadow: none; }
-  .box { background: rgba(6, 9, 7, 0.86); }
+  .box { background: rgba(4, 6, 5, 0.8); }
 
   @media (prefers-reduced-motion: reduce) {
     .noise, .fog, h1, .ring::before, section.active { animation: none; }
